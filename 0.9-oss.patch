@@ -1,0 +1,45 @@
+--- origsrc/aqualung-0.9beta10/configure.ac	2009-02-08 04:54:25.000000000 -0600
++++ src/aqualung-0.9beta10/configure.ac	2009-03-04 03:08:31.632875000 -0600
+@@ -28,9 +28,10 @@ fi
+ 
+ AC_MSG_CHECKING(for compilation platform)
+ if test `uname -a | grep CYGWIN | wc -l` = "1" ; then
+-   PLATFORM_CFLAGS="-mwin32 -mwindows"
+-   PLATFORM_LIBS="-lintl -lwinmm"
+-   win32="yes"
++   PLATFORM_CFLAGS=""
++   PLATFORM_LIBS=""
++   cygwin="yes"
++   win32="no"
+    freebsd="no"
+    openbsd="no"
+    linux="no"
+@@ -203,7 +204,7 @@ AC_ARG_WITH(
+ if test "$oss" = no; then
+ 	AC_MSG_RESULT(no)
+ else
+-	if test $freebsd = "yes" ; then
++	if test $freebsd = "yes" || test "$cygwin" = "yes" ; then
+ 	        AC_CHECK_HEADER([sys/soundcard.h], [hdr=yes], [hdr=no])
+ 	elif test $openbsd = "yes" ; then
+ 	        AC_CHECK_HEADER([soundcard.h], [hdr=yes], [hdr=no])
+@@ -222,7 +223,7 @@ else
+ 		fi
+ 	fi
+ 	if test "$hdr" = "no" -a "$oss" = "yes"; then
+-	        if test $freebsd = "yes" ; then
++	        if test $freebsd = "yes" || test "$cygwin" = "yes" ; then
+ 		        AC_MSG_ERROR(You do not appear to have sys/soundcard.h needed by OSS sound support.)
+ 		elif test $openbsd = "yes" ; then
+ 			AC_MSG_ERROR(You do not appear to have soundcard.h needed by OSS sound support.)
+--- origsrc/aqualung-0.9beta10/src/core.c	2009-02-08 04:55:56.000000000 -0600
++++ src/aqualung-0.9beta10/src/core.c	2009-03-04 03:15:53.164125000 -0600
+@@ -52,7 +52,7 @@
+ #ifdef HAVE_OSS
+ #include <sys/ioctl.h>
+ #include <sys/types.h>
+-#ifdef __FreeBSD__
++#if defined(__FreeBSD__) || defined(__CYGWIN__)
+ #include <sys/soundcard.h>
+ #else
+ #ifdef __OpenBSD__

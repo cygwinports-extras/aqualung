@@ -1,0 +1,27 @@
+DESCRIPTION="GTK+ advanced music and CD player"
+HOMEPAGE="http://aqualung.factorial.hu/"
+SRC_URI="mirror://sourceforge/aqualung/${P}.tar.gz"
+PATCH_URI="0.9-oss.patch
+           0.9-d_type.patch"
+
+src_compile() {
+	cd ${S}
+	cygautoreconf
+	lndirs
+	cd ${B}
+	cygconf --without-alsa --without-jack --with-oss --without-mac
+	cygmake
+}
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	for i in 16 24 32 48 64
+	do
+		insinto /usr/share/icons/hicolor/${i}x${i}/apps
+		newins ${S}/src/img/icon_${i}.png ${PN}.png
+	done
+
+	make_desktop_entry ${PN} AquaLung ${PN} "AudioVideo;Audio;Player;GTK"
+}

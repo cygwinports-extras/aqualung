@@ -1,0 +1,255 @@
+aqualung
+------------------------------------------
+Aqualung is an advanced music player. It plays audio CDs, internet radio 
+streams and podcasts as well as soundfiles in just about any audio 
+format and has the feature of inserting no gaps between adjacent tracks.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libavcodec52-13777-1
+  libavformat52-13777-1
+  libbz2_1-1.0.5-2
+  libcairo2-1.8.6-1
+  libcddb2-1.3.0-2
+  libcdio10-0.81-1
+  libcdio_cdda0-0.81-1
+  libcdio_paranoia0-0.81-1
+  libFLAC8-1.2.1-2
+  libgdk_pixbuf2.0_0-2.14.7-2
+  libglib2.0_0-2.18.4-1
+  libgtk2.0_0-2.14.7-2
+  libintl8-0.17-2
+  liblrdf2-0.4.0-1
+  libmad0-0.15.1b-5
+  libmodplug0-0.8.4-2
+  libmp3lame0-3.98.2-1
+  libmpcdec5-1.2.6-1
+  libogg0-1.1.3-1
+  libpango1.0_0-1.22.4-1
+  libsamplerate0-0.1.7-1
+  libsndfile1-1.0.17-3
+  libvorbis0-1.2.0-2
+  libvorbisenc2-1.2.0-2
+  libvorbisfile3-1.2.0-2
+  libwavpack1-4.50.1-1
+  libxml2-2.7.3-1
+  lua-5.1.4-1
+  zlib-1.2.3-2
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool-2.2.6a-1
+  make-3.81-1
+  pkg-config-0.23a-2
+  sed-4.1.5-2
+
+Canonical website:
+  http://aqualung.factorial.hu/
+
+Canonical download:
+  http://downloads.sourceforge.net/aqualung/
+
+-------------------------------------------
+
+Build instructions:
+  unpack aqualung-0.9beta10-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./aqualung-0.9beta10-X.cygport all
+
+This will create:
+  /usr/src/aqualung-0.9beta10-X-src.tar.bz2
+  /usr/src/aqualung-0.9beta10-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/aqualung.sh
+  /usr/bin/aqualung.exe
+  /usr/share/applications/aqualung.desktop
+  /usr/share/aqualung/appearance.png
+  /usr/share/aqualung/cdda.png
+  /usr/share/aqualung/cddb.png
+  /usr/share/aqualung/doc/README
+  /usr/share/aqualung/doc/aqualung-doc.css
+  /usr/share/aqualung/doc/aqualung-doc.dtd
+  /usr/share/aqualung/doc/aqualung-doc.xml
+  /usr/share/aqualung/doc/aqualung-latex.xsl
+  /usr/share/aqualung/doc/aqualung-man.xsl
+  /usr/share/aqualung/doc/aqualung-xhtml-multipage.xsl
+  /usr/share/aqualung/doc/aqualung-xhtml-view.xsl
+  /usr/share/aqualung/doc/aqualung-xhtml.xsl
+  /usr/share/aqualung/doc/external.eps
+  /usr/share/aqualung/doc/external.png
+  /usr/share/aqualung/doc/jack.png
+  /usr/share/aqualung/doc/main.png
+  /usr/share/aqualung/doc/playlist.png
+  /usr/share/aqualung/doc/settings.png
+  /usr/share/aqualung/doc/split.sh
+  /usr/share/aqualung/doc/store.png
+  /usr/share/aqualung/doc/systray.png
+  /usr/share/aqualung/doc/timer.eps
+  /usr/share/aqualung/doc/timer.png
+  /usr/share/aqualung/drag.png
+  /usr/share/aqualung/dsp.png
+  /usr/share/aqualung/general.png
+  /usr/share/aqualung/icon_16.png
+  /usr/share/aqualung/icon_24.png
+  /usr/share/aqualung/icon_32.png
+  /usr/share/aqualung/icon_48.png
+  /usr/share/aqualung/icon_64.png
+  /usr/share/aqualung/inet.png
+  /usr/share/aqualung/logo.png
+  /usr/share/aqualung/metadata.png
+  /usr/share/aqualung/ms-artist.png
+  /usr/share/aqualung/ms-cdda-disk.png
+  /usr/share/aqualung/ms-cdda-nodisk.png
+  /usr/share/aqualung/ms-cdda.png
+  /usr/share/aqualung/ms-feed.png
+  /usr/share/aqualung/ms-podcast.png
+  /usr/share/aqualung/ms-record.png
+  /usr/share/aqualung/ms-store.png
+  /usr/share/aqualung/ms-track.png
+  /usr/share/aqualung/music_store.png
+  /usr/share/aqualung/playlist.png
+  /usr/share/aqualung/rva.png
+  /usr/share/aqualung/skin/dark/btn_bg1.png
+  /usr/share/aqualung/skin/dark/btn_bg2.png
+  /usr/share/aqualung/skin/dark/btn_bg3.png
+  /usr/share/aqualung/skin/dark/next.png
+  /usr/share/aqualung/skin/dark/pause.png
+  /usr/share/aqualung/skin/dark/play.png
+  /usr/share/aqualung/skin/dark/play_pause.png
+  /usr/share/aqualung/skin/dark/prev.png
+  /usr/share/aqualung/skin/dark/rc
+  /usr/share/aqualung/skin/dark/repeat.png
+  /usr/share/aqualung/skin/dark/repeat_all.png
+  /usr/share/aqualung/skin/dark/scale_bg.png
+  /usr/share/aqualung/skin/dark/shuffle.png
+  /usr/share/aqualung/skin/dark/stop.png
+  /usr/share/aqualung/skin/dark/time_bg.png
+  /usr/share/aqualung/skin/dark/title_bg.png
+  /usr/share/aqualung/skin/default/bg.png
+  /usr/share/aqualung/skin/default/bg2.png
+  /usr/share/aqualung/skin/default/bg3.png
+  /usr/share/aqualung/skin/default/bg4.png
+  /usr/share/aqualung/skin/default/bg5.png
+  /usr/share/aqualung/skin/default/next.png
+  /usr/share/aqualung/skin/default/pause.png
+  /usr/share/aqualung/skin/default/play.png
+  /usr/share/aqualung/skin/default/play_pause.png
+  /usr/share/aqualung/skin/default/prev.png
+  /usr/share/aqualung/skin/default/rc
+  /usr/share/aqualung/skin/default/repeat.png
+  /usr/share/aqualung/skin/default/repeat_all.png
+  /usr/share/aqualung/skin/default/shuffle.png
+  /usr/share/aqualung/skin/default/stop.png
+  /usr/share/aqualung/skin/metal/bg1.png
+  /usr/share/aqualung/skin/metal/bg2.png
+  /usr/share/aqualung/skin/metal/bg3.png
+  /usr/share/aqualung/skin/metal/bg4.png
+  /usr/share/aqualung/skin/metal/bg5.png
+  /usr/share/aqualung/skin/metal/bg6.png
+  /usr/share/aqualung/skin/metal/next.png
+  /usr/share/aqualung/skin/metal/pause.png
+  /usr/share/aqualung/skin/metal/play.png
+  /usr/share/aqualung/skin/metal/play_pause.png
+  /usr/share/aqualung/skin/metal/prev.png
+  /usr/share/aqualung/skin/metal/rc
+  /usr/share/aqualung/skin/metal/repeat.png
+  /usr/share/aqualung/skin/metal/repeat_all.png
+  /usr/share/aqualung/skin/metal/scale_bg.png
+  /usr/share/aqualung/skin/metal/shuffle.png
+  /usr/share/aqualung/skin/metal/stop.png
+  /usr/share/aqualung/skin/no_skin/next.png
+  /usr/share/aqualung/skin/no_skin/pause.png
+  /usr/share/aqualung/skin/no_skin/play.png
+  /usr/share/aqualung/skin/no_skin/play_pause.png
+  /usr/share/aqualung/skin/no_skin/prev.png
+  /usr/share/aqualung/skin/no_skin/rc
+  /usr/share/aqualung/skin/no_skin/repeat.png
+  /usr/share/aqualung/skin/no_skin/repeat_all.png
+  /usr/share/aqualung/skin/no_skin/shuffle.png
+  /usr/share/aqualung/skin/no_skin/stop.png
+  /usr/share/aqualung/skin/ocean/bg.png
+  /usr/share/aqualung/skin/ocean/bg2.png
+  /usr/share/aqualung/skin/ocean/bg3.png
+  /usr/share/aqualung/skin/ocean/fx.png
+  /usr/share/aqualung/skin/ocean/ms.png
+  /usr/share/aqualung/skin/ocean/next.png
+  /usr/share/aqualung/skin/ocean/pause.png
+  /usr/share/aqualung/skin/ocean/pl.png
+  /usr/share/aqualung/skin/ocean/play.png
+  /usr/share/aqualung/skin/ocean/play_pause.png
+  /usr/share/aqualung/skin/ocean/prev.png
+  /usr/share/aqualung/skin/ocean/rc
+  /usr/share/aqualung/skin/ocean/repeat.png
+  /usr/share/aqualung/skin/ocean/repeat_all.png
+  /usr/share/aqualung/skin/ocean/shuffle.png
+  /usr/share/aqualung/skin/ocean/stop.png
+  /usr/share/aqualung/skin/plain/next.png
+  /usr/share/aqualung/skin/plain/pause.png
+  /usr/share/aqualung/skin/plain/play.png
+  /usr/share/aqualung/skin/plain/play_pause.png
+  /usr/share/aqualung/skin/plain/prev.png
+  /usr/share/aqualung/skin/plain/rc
+  /usr/share/aqualung/skin/plain/repeat.png
+  /usr/share/aqualung/skin/plain/repeat_all.png
+  /usr/share/aqualung/skin/plain/shuffle.png
+  /usr/share/aqualung/skin/plain/stop.png
+  /usr/share/aqualung/skin/woody/next.png
+  /usr/share/aqualung/skin/woody/pause.png
+  /usr/share/aqualung/skin/woody/pine.png
+  /usr/share/aqualung/skin/woody/play.png
+  /usr/share/aqualung/skin/woody/play_pause.png
+  /usr/share/aqualung/skin/woody/prev.png
+  /usr/share/aqualung/skin/woody/rc
+  /usr/share/aqualung/skin/woody/repeat.png
+  /usr/share/aqualung/skin/woody/repeat_all.png
+  /usr/share/aqualung/skin/woody/scale_bg.png
+  /usr/share/aqualung/skin/woody/shuffle.png
+  /usr/share/aqualung/skin/woody/stop.png
+  /usr/share/aqualung/skin/woody/time_bg.png
+  /usr/share/aqualung/skin/woody/wood1.png
+  /usr/share/aqualung/skin/woody/wood2.png
+  /usr/share/aqualung/skin/woody/wood3.png
+  /usr/share/aqualung/skin/woody/wood4.png
+  /usr/share/aqualung/skin/woody/wood5.png
+  /usr/share/aqualung/skin/woody/wood6.png
+  /usr/share/aqualung/tab-close.png
+  /usr/share/doc/aqualung-0.9beta10/AUTHORS
+  /usr/share/doc/aqualung-0.9beta10/COPYING
+  /usr/share/doc/aqualung-0.9beta10/ChangeLog
+  /usr/share/doc/aqualung-0.9beta10/INSTALL
+  /usr/share/doc/aqualung-0.9beta10/README
+  /usr/share/icons/hicolor/16x16/apps/aqualung.png
+  /usr/share/icons/hicolor/24x24/apps/aqualung.png
+  /usr/share/icons/hicolor/32x32/apps/aqualung.png
+  /usr/share/icons/hicolor/48x48/apps/aqualung.png
+  /usr/share/icons/hicolor/64x64/apps/aqualung.png
+  /usr/share/locale/de/LC_MESSAGES/aqualung.mo
+  /usr/share/locale/hu/LC_MESSAGES/aqualung.mo
+  /usr/share/locale/it/LC_MESSAGES/aqualung.mo
+  /usr/share/locale/ru/LC_MESSAGES/aqualung.mo
+  /usr/share/locale/sv/LC_MESSAGES/aqualung.mo
+  /usr/share/locale/uk/LC_MESSAGES/aqualung.mo
+  /usr/share/man/man1/aqualung.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.9beta10-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
