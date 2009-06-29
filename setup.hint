@@ -1,5 +1,5 @@
 category: Audio Gnome
-requires: cygwin libavcodec52 libavformat52 libbz2_1 libcairo2 libcddb2 libcdio10 libcdio_cdda0 libcdio_paranoia0 libFLAC8 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libintl8 liblrdf2 libmad0 libmodplug0 libmp3lame0 libmpcdec5 libogg0 libpango1.0_0 libsamplerate0 libsndfile1 libvorbis0 libvorbisenc2 libvorbisfile3 libwavpack1 libxml2 lua zlib
+requires: libavcodec52 libavformat52 libbz2_1 libcairo2 libcddb2 libcdio10 libcdio_cdda0 libcdio_paranoia0 libFLAC8 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libintl8 liblrdf2 libmad0 libmodplug0 libmp3lame0 libmpcdec5 libogg0 libpango1.0_0 libsamplerate0 libsndfile1 libvorbis0 libvorbisenc2 libvorbisfile3 libwavpack1 libxml2 lua zlib
 sdesc: "GTK+ advanced music and CD player"
 ldesc: "Aqualung is an advanced music player. It plays audio CDs, 
 internet radio streams and podcasts as well as soundfiles in just about 
