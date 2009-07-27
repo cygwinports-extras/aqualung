@@ -5,48 +5,49 @@ streams and podcasts as well as soundfiles in just about any audio
 format and has the feature of inserting no gaps between adjacent tracks.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libavcodec52-13777-1
-  libavformat52-13777-1
-  libbz2_1-1.0.5-2
-  libcairo2-1.8.6-1
-  libcddb2-1.3.0-2
-  libcdio10-0.81-1
-  libcdio_cdda0-0.81-1
-  libcdio_paranoia0-0.81-1
-  libFLAC8-1.2.1-2
-  libgdk_pixbuf2.0_0-2.14.7-2
-  libglib2.0_0-2.18.4-1
-  libgtk2.0_0-2.14.7-2
-  libintl8-0.17-2
-  liblrdf2-0.4.0-1
-  libmad0-0.15.1b-5
-  libmodplug0-0.8.4-2
-  libmp3lame0-3.98.2-1
-  libmpcdec5-1.2.6-1
+  cygwin-1.7.0-51
+  libavcodec52-0.5-1
+  libavformat52-0.5-1
+  libbz2_1-1.0.5-10
+  libcairo2-1.8.8-1
+  libcddb2-1.3.1-1
+  libcdio10-0.81-10
+  libcdio_cdda0-0.81-10
+  libcdio_paranoia0-0.81-10
+  libFLAC8-1.2.1-1
+  libgcc1-4.3.2-2
+  libgdk_pixbuf2.0_0-2.16.5-1
+  libglib2.0_0-2.20.4-1
+  libgtk2.0_0-2.16.5-1
+  libintl8-0.17-11
+  liblrdf2-0.4.0-10
+  libmad0-0.15.1b-10
+  libmodplug0-0.8.7-1
+  libmp3lame0-3.98.2-10
+  libmpcdec5-1.2.6-10
   libogg0-1.1.3-1
-  libpango1.0_0-1.22.4-1
-  libsamplerate0-0.1.7-1
-  libsndfile1-1.0.17-3
+  libpango1.0_0-1.24.5-1
+  libsamplerate0-0.1.7-10
+  libsndfile1-1.0.19-1
   libvorbis0-1.2.0-2
   libvorbisenc2-1.2.0-2
   libvorbisfile3-1.2.0-2
-  libwavpack1-4.50.1-1
-  libxml2-2.7.3-1
-  lua-5.1.4-1
-  zlib-1.2.3-2
+  libwavpack1-4.50.1-10
+  libxml2-2.7.3-10
+  lua-5.1.4-11
+  zlib0-1.2.3-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
-  binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  libtool-2.2.6a-1
-  make-3.81-1
-  pkg-config-0.23a-2
+  autoconf2.5-2.63-10
+  automake1.10-1.10.2-10
+  binutils-2.19.51-1
+  cygport-0.9.8-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  libtool-2.2.7a-14
+  make-3.81-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -225,11 +226,10 @@ Files included in the binary package:
   /usr/share/aqualung/skin/woody/wood5.png
   /usr/share/aqualung/skin/woody/wood6.png
   /usr/share/aqualung/tab-close.png
-  /usr/share/doc/aqualung-0.9beta10/AUTHORS
-  /usr/share/doc/aqualung-0.9beta10/COPYING
-  /usr/share/doc/aqualung-0.9beta10/ChangeLog
-  /usr/share/doc/aqualung-0.9beta10/INSTALL
-  /usr/share/doc/aqualung-0.9beta10/README
+  /usr/share/doc/aqualung/AUTHORS
+  /usr/share/doc/aqualung/COPYING
+  /usr/share/doc/aqualung/ChangeLog
+  /usr/share/doc/aqualung/README
   /usr/share/icons/hicolor/16x16/apps/aqualung.png
   /usr/share/icons/hicolor/24x24/apps/aqualung.png
   /usr/share/icons/hicolor/32x32/apps/aqualung.png
@@ -247,8 +247,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 0.9beta10-1 -----
-Initial release for Cygwin.
+----- version 0.9beta10-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

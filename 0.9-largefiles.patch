@@ -1,0 +1,11 @@
+--- origsrc/aqualung-0.9beta10/src/plugin.c	2009-02-08 04:55:56.000000000 -0600
++++ src/aqualung-0.9beta10/src/plugin.c	2009-03-04 03:14:51.492250000 -0600
+@@ -43,7 +43,7 @@
+ #include "plugin.h"
+ 
+ 
+-#ifdef __FreeBSD__
++#if defined(__FreeBSD__) || defined(__CYGWIN__)
+ #define dirent64 dirent
+ #define scandir64 scandir
+ #define alphasort64 alphasort

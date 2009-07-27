@@ -2,7 +2,7 @@ DESCRIPTION="GTK+ advanced music and CD player"
 HOMEPAGE="http://aqualung.factorial.hu/"
 SRC_URI="mirror://sourceforge/aqualung/${P}.tar.gz"
 PATCH_URI="0.9-oss.patch
-           0.9-d_type.patch"
+           0.9-largefiles.patch"
 
 src_compile() {
 	cd ${S}
